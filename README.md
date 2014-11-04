@@ -1,19 +1,19 @@
-##Zetta FONA FM Radio serial device driver
+##Zetta FONA Phone serial device driver
 
 ###Install
 
 ```
-$> npm install zetta-fona-fm-radio-serial-driver
+$> npm install zetta-fona-phone-serial-driver
 ```
 
 ###Usage
 
 ```
 var zetta = require('zetta');
-var FonaFMRadio = require('zetta-fona-fm-radio-serial-driver');
+var FonaPhone = require('zetta-fona-phone-serial-driver');
 
 zetta()
-  .use(FonaFMRadio)
+  .use(FonaPhone)
   .listen(1337)
 ```
 

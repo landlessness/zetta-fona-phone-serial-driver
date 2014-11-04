@@ -1,20 +1,20 @@
 var Scout = require('zetta-scout');
 var util = require('util');
-var FonaFMRadio = require('./fona_fm_radio');
+var FonaPhone = require('./fona_phone');
 
-var FonaFMRadioScout = module.exports = function() {
+var FonaPhoneScout = module.exports = function() {
   Scout.call(this);
 };
-util.inherits(FonaFMRadioScout, Scout);
+util.inherits(FonaPhoneScout, Scout);
 
-FonaFMRadioScout.prototype.init = function(next) {
+FonaPhoneScout.prototype.init = function(next) {
   var queries = [
-    this.server.where({ type: 'serial' })
+    this.server.where({ type: 'fona-phone' })
   ];
 
   var self = this;
   this.server.observe(queries, function(serialDevice) {
-    self.discover(FonaFMRadio, serialDevice);
+    self.discover(FonaPhone, serialDevice);
   });
 
   next();
