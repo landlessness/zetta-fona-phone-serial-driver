@@ -1,6 +1,6 @@
 {
   "name": "zetta-fona-phone-serial-driver",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Zetta FONA Phone serial device driver",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "zetta-serial-device-driver": "~0.5.2",
+    "zetta-serial-device-driver": "~0.5.4",
     "zetta-scout": "~0.4.0",
     "zetta-device": "~0.8.0"
   },
